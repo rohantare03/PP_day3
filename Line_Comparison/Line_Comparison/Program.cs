@@ -17,8 +17,17 @@
         public static void Main(string[] args)
         {
             Program Length = new Program();
-            double length = Length.FindLength();
-            Console.WriteLine("The length of Two points of line :" + length);
+            double length1 = Length.FindLength();
+            double length2 = Length.FindLength();
+            
+            if (length1 == length2)
+            {
+                Console.WriteLine("Line-1 is equal to Line-2");
+            }
+            else
+            {
+                Console.WriteLine("Line-1 is not equal to Line-2");
+            }
 
         }
     
