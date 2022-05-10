@@ -19,14 +19,24 @@
             Program Length = new Program();
             double length1 = Length.FindLength();
             double length2 = Length.FindLength();
+
+            Console.WriteLine("The length of two points of Line-1 : " + length1);
+            Console.WriteLine("The length of two points of Line-2 : " + length2);
             
-            if (length1 == length2)
+            if (length1 > length2)
             {
-                Console.WriteLine("Line-1 is equal to Line-2");
+                Console.WriteLine("Line-1 is greater than Line-2");
             }
             else
             {
-                Console.WriteLine("Line-1 is not equal to Line-2");
+                if (length1 < length2)
+                {
+                    Console.WriteLine("Line-1 is less than Line-2");
+                }
+                else
+                {
+                    Console.WriteLine("Line-1 is equal to Line-2");
+                }
             }
 
         }
